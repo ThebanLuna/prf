@@ -1,118 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theban</title>
-    <!-- Favicon -->
-    <link rel="icon" href="AvatarFav.png" type="image/x-icon" />
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Core theme CSS -->
-    <link rel="stylesheet" href="style.css">
-    <script>
-      // Play or pause the audio
-      function toggleAudio() {
-        var audio = document.getElementById('backgroundAudio');
-        var playButton = document.getElementById('audioButton');
-        
-        if (audio.paused) {
-          audio.play();
-          playButton.innerHTML = '<i class="fas fa-pause"></i> Pause Music';
-        } else {
-          audio.pause();
-          playButton.innerHTML = '<i class="fas fa-play"></i> Play Music';
-        }
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theban</title>
+  <!-- Favicon -->
+  <link rel="icon" href="AvatarFav.png" type="image/x-icon" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Core theme CSS -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Play or pause the audio
+    function toggleAudio() {
+      var audio = document.getElementById('backgroundAudio');
+      var playButton = document.getElementById('audioButton');
+
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML = '<i class="fas fa-pause"></i> Pause Music';
+      } else {
+        audio.pause();
+        playButton.innerHTML = '<i class="fas fa-play"></i> Play Music';
       }
-    </script>
-  </head>
+    }
+  </script>
+</head>
 
-  <body>
-    <!-- Parallax Pixel Background Animation -->
-    <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </section>
-    <!-- End of Parallax Pixel Background Animation -->
+<body>
+  <!-- Parallax Pixel Background Animation -->
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+  <!-- End of Parallax Pixel Background Animation -->
 
-    <a id="profilePicture" href="#profilepic">
-      <img src="conthocuat.jpg" alt="">
+  <a id="profilePicture" href="#profilepic">
+    <img src="conthocuat.jpg" alt="">
+  </a>
+
+  <div class="overlay" id="profilepic">
+    <div class="popup">
+      <div class="popup-photo">
+        <img src="thovangcuatao.png
+          " alt="">
+      </div>
+      <div class="popup-quote">
+        Vẫn FA. Cần một ai đó đến bên tui lúc này
+      </div>
+      <a class="popup-close" onclick="history.back()">&times;</a>
+    </div>
+  </div>
+
+  <div id="userName">
+    theban
+  </div>
+
+  <div id="realName">
+    Thế Ban
+  </div>
+
+  <div id="links">
+    <a class="link" href="https://www.facebook.com/theban204" target="_blank">
+      <i class="fa fa-plus-square">&nbsp;</i>Follow my Page!
+    </a>
+    <a class="link" href="https://github.com/ThebanLuna" target="_blank">
+      <i class="fab fa-github">&nbsp;</i>Github
+    </a>
+    <a class="link" href="https://www.facebook.com/theban204" target="_blank">
+      <i class="fab fa-facebook">&nbsp;</i>Facebook
+    </a>
+    <a class="link" href="#zaloqr" target="_self">
+      <i class="fa fa-phone">&nbsp;</i>Zalo
+    </a>
+    <a class="link" href="#donateqr" target="_self">
+      <i class="fa fa-donate">&nbsp;</i>STK kủa me.
     </a>
 
-    <div class="overlay" id="profilepic">
+    <div class="overlay" id="zaloqr">
       <div class="popup">
         <div class="popup-photo">
-          <img src="thovangcuatao.jpg" alt="">
+          <img src="ZaloQR.jpg" alt="">
         </div>
         <div class="popup-quote">
-          Cần một ai đó đến bên tôi lúc này
+          Liên hệ công việc 📱
         </div>
         <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
     </div>
 
-    <div id="userName">
-      theban
-    </div>
-
-    <div id="realName">
-      Thế Ban
-    </div>
-
-    <div id="links">
-      <a class="link" href="https://www.facebook.com/theban204" target="_blank">
-        <i class="fa fa-plus-square">&nbsp;</i>Follow my Page!
-      </a>
-      <a class="link" href="https://github.com/ThebanLuna" target="_blank">
-        <i class="fab fa-github">&nbsp;</i>Github
-      </a>
-      <a class="link" href="https://www.facebook.com/theban204" target="_blank">
-        <i class="fab fa-facebook">&nbsp;</i>Facebook
-      </a>
-      <a class="link" href="#zaloqr" target="_self">
-        <i class="fa fa-phone">&nbsp;</i>Zalo
-      </a>
-      <a class="link" href="#donateqr" target="_self">
-        <i class="fa fa-donate">&nbsp;</i>STK kủa me.
-      </a>
-
-      <div class="overlay" id="zaloqr">
-        <div class="popup">
-          <div class="popup-photo">
-            <img src="ZaloQR.jpg" alt="">
-          </div>
-          <div class="popup-quote">
-            Liên hệ công việc 📱
-          </div>
-          <a class="popup-close" onclick="history.back()">&times;</a>
+    <div class="overlay" id="donateqr">
+      <div class="popup">
+        <div class="popup-photo">
+          <img src="stktao.jpg" alt="">
         </div>
-      </div>
-      
-      <div class="overlay" id="donateqr">
-        <div class="popup">
-          <div class="popup-photo">
-            <img src="stktao.jpg" alt="">
-          </div>
-          <div class="popup-quote">
-            Ủng hộ gói mì 🍜
-          </div>
-          <a class="popup-close" onclick="history.back()">&times;</a>
+        <div class="popup-quote">
+          Ủng hộ gói mì 🍜
         </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
     </div>
+  </div>
 
-    <div id="hashtag">
-      sad
-    </div>
+  <div id="hashtag">
+    sad
+  </div>
 
-    <!-- Audio player with play/pause button -->
-    <div id="audioPlayer">
-      <audio id="backgroundAudio" src="choanhnhe.mp3"></audio>
-      <button id="audioButton" onclick="toggleAudio()">
-        <i class="fas fa-play"></i> Play Music
-      </button>
-    </div>
+  <!-- Audio player with play/pause button -->
+  <div id="audioPlayer">
+    <audio id="backgroundAudio" src="choanhnhe.mp3"></audio>
+    <button id="audioButton" onclick="toggleAudio()">
+      <i class="fas fa-play"></i> Play Music
+    </button>
+  </div>
 
-  </body>
+</body>
+
 </html>
